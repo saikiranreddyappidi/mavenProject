@@ -7,12 +7,10 @@ import Model.Student;
 import View.StudentView;
 
 public class StudentController {
-	private List<Student> studentList;
-	private StudentView view;
+	private final List<Student> studentList;
 
 	public StudentController(StudentView view) {
 		this.studentList = new ArrayList<>();
-		this.view = view;
 	}
 
 	public void addStudent(int id, String name, int age) {

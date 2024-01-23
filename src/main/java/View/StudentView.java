@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import Model.Student;
+import Model.Data;
 
 public class StudentView {
     private final List<Student> studentList;
@@ -24,7 +25,9 @@ public class StudentView {
         System.out.print("Enter Age: ");
         int age = scanner.nextInt();
         scanner.nextLine(); // Consume newline
-        studentList.add(new Student(id, name, age));
+        Student stu=new Student(id, name, age);
+        studentList.add(stu);//----------
+        new Data(stu);
     }
 
     public void updateStudent() {

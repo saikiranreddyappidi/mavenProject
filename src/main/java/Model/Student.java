@@ -5,6 +5,17 @@ public class Student {
 	private String name;
 	private int age;
 
+	public Student(int id, String name, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+
+	public Student() {
+
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -29,11 +40,6 @@ public class Student {
 		this.age = age;
 	}
 
-	public Student(int id, String name, int age) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-	}
+
 
 }
